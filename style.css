@@ -1,0 +1,17 @@
+.container {
+     border: 1px solid black;
+     width: 75%;
+     margin: 0 auto;
+     text-align: center;
+}
+
+.game-box {
+    display:flex;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    height: 350px; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
