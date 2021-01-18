@@ -10,18 +10,43 @@
 <body>
     
 <div class = "container">
-    <h1>Card Matching Game</h1>
+    <h2>Card Matching Game</h2>
+    
     <div class = "game-box">
-
     </div>
-
+    
+    <a href="#" id="myBtn">Instruction</a>
+    <!--The modal box-->
+        <div id = "myModal" class="modal">
+            <!--The modal content-->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Card Matching Game</h1>
+                <p>Two players would take turns selecting two cards on the game board. When no cards
+                    are left, the player with the most points wins. </p>
+                <p>Players who select matching cards would select again until they find a mismatch.</p>    
+                <p>If a player clicks on the same card twice, they would lose their turn.</p>
+            </div>
+        </div>
+    
     <div class = "game-box-results">
-        <p>Player Turn: <span id = "current-player">1</span></p>
-        <p>Player 1 score: <span id ="player1-score">0</span></p>
-        <p>Player 2 score: <span id ="player2-score">0</span></p>   
+        <p id ="players-turn">Player Turn: <span id = "current-player">1</span></p>
+          
+    </div>
+    <div class = "game-box-players">
+        <table>
+            <tr>
+                <td>Player 1 Score: <span id ="player1-score">0</span></td>
+                <td>Player 2 Score: <span id ="player2-score">0</span></td>
+            </tr>
+        </table>
     </div>
 
-   
+    <div class = "winner">
+        <p><span id="player-winner"></span></p>
+        <button type="button" id="restartBtn">Restart</button>
+    </div>
+    
     <script src = "javascript.js" charset="UTF-8"></script>
 </div>
 </body>

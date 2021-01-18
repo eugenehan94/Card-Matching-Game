@@ -1,18 +1,92 @@
+body {
+    background: #6cc3d8;
+}
+
+
 .container {
      border: 1px solid black;
-     width: 90%;
+     width: 95%;
      margin: 0 auto;
+     text-align: center;
+     background: #fff;
+     border-radius: 7px;
 }
 
 .game-box {
-    
-    display:flex;
+    display: flex;
     border: 1px solid black;
-    padding: 10px;
-    width: 80%;
-    height: 80%; 
+    padding: 5px; 
+    margin: 0px 20px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    background: #88d5e9;
+    border-radius: 5px;
+}
+.game-box-results, .game-box-players, .winner {
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
     
+}
+
+table {
+    width: 100%;
+    margin: 0; 
+}
+table, td {
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#players-turn{
+    color: red;
+} 
+
+.winner {
+    visibility: hidden;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
