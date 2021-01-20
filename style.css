@@ -11,7 +11,7 @@ body {
      background: #fff;
      border-radius: 7px;
 }
-
+/* Game-box is where the card game takes place */
 .game-box {
     display: flex;
     border: 1px solid black;
@@ -30,26 +30,26 @@ body {
     
 }
 
+/* Table used to hold the two players scores */
 table {
     width: 100%;
     margin: 0; 
 }
+
 table, td {
 
     margin-left: auto;
     margin-right: auto;
     
 }
-
+/* Display which players turn it is */
 #players-turn{
     color: red;
 } 
-
+/* The winner shows when games is completed */
 .winner {
     visibility: hidden;
 }
-
-
 
 
 /* The Modal (background) */
@@ -76,7 +76,7 @@ table, td {
   width: 80%;
 }
 
-/* The Close Button */
+/* The Close Button of the modal box */
 .close {
   color: #aaaaaa;
   float: right;

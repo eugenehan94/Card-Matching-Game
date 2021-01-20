@@ -1,3 +1,4 @@
+//Repeated two sets of cards to allow matching cards
 const cardsArray = [{name: "Ace", img: "cardImages/Ace.png"}, {name: "2", img:"cardImages/2.png"}, 
 {name: "3", img:"cardImages/3.png"}, {name: "4", img: "cardImages/4.png"}, 
 {name: "5", img: "cardImages/5.png"}, {name: "6", img:"cardImages/6.png"}, 
@@ -22,9 +23,12 @@ const playersTurnMessage = document.querySelector("#players-turn");
 
 const displayPlayerOneScore = document.querySelector("#player1-score");
 const displayPlayerTwoScore = document.querySelector("#player2-score");
+
+/* Use to display the winner when game finishes */
 const winner = document.querySelector("#player-winner");
 const winnerContainer = document.querySelector(".winner");
 
+/* When game ends - a reset buttons to restart game */
 const restartBtn = document.querySelector("#restartBtn");
 
 let playersTurn = 1;
@@ -36,6 +40,12 @@ let cardsSelectedId = [];
 
 let cardCounter = cardsArray.length;
 
+/* Used to make the modal box appear and disappear */
+let modal = document.querySelector("#myModal");
+let btn = document.querySelector("#myLink");
+let span = document.querySelector(".close");
+
+/* This function randomizes the card array*/
 cardsArray.sort(function(){
     return 0.5 - Math.random();
 });
@@ -141,9 +151,7 @@ restartBtn.addEventListener("click", function(){
     displayPlayerTwoScore.innerHTML = playerTwoScore;
 });
 
-let modal = document.querySelector("#myModal");
-let btn = document.querySelector("#myBtn");
-let span = document.querySelector(".close");
+
 
 btn.addEventListener("click", function(){
     modal.style.display = "block";
