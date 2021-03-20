@@ -1,56 +1,73 @@
 body {
-    background: #6cc3d8;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
 .container {
-     border: 1px solid black;
-     width: 95%;
-     margin: 0 auto;
-     text-align: center;
-     background: #fff;
-     border-radius: 7px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  background: #fff;
+}
+
+#container-heading {
+  margin: 0;
+  padding-top: 1px;
+}
+#myLink {
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1px;
+}
+#myLink:hover {
+  text-decoration-style: solid;
 }
 /* Game-box is where the card game takes place */
 .game-box {
-    display: flex;
-    border: 1px solid black;
-    padding: 5px; 
-    margin: 0px 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    background: #88d5e9;
-    border-radius: 5px;
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0px 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background: #88d5e9;
+  border-radius: 5px;
 }
-.game-box-results, .game-box-players, .winner {
-    font-family: Tahoma, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    
+
+.game-box-results p {
+  margin: 0;
+  padding: 0;
+}
+.game-box-results,
+.game-box-players,
+.winner {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
 }
 
 /* Table used to hold the two players scores */
 table {
-    width: 100%;
-    margin: 0; 
+  width: 100%;
+  margin: 0;
 }
 
-table, td {
-
-    margin-left: auto;
-    margin-right: auto;
-    
+table,
+td {
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Display which players turn it is */
-#players-turn{
-    color: red;
-} 
+#players-turn {
+  color: red;
+}
 /* The winner shows when games is completed */
 .winner {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -63,8 +80,8 @@ table, td {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -89,4 +106,34 @@ table, td {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+#restartBtn {
+  background-color: #5db6cc;
+  outline: none;
+  border: none;
+  width: 50%;
+  font-size: 24px;
+  border-radius: 10px;
+  color: rgb(71, 68, 68);
+  padding: 10px 0;
+}
+#restartBtn:hover {
+  background-color: #0d4857;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+
+  #container-heading {
+    padding-top: 0px;
+  }
+
+  .game-box {
+    border: none;
+    padding: 0px;
+    margin: 0;
+    border-radius: 0;
+  }
 }
