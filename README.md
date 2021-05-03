@@ -10,5 +10,8 @@ A feature is added if a player selects the same card, they would instantly lose 
 ## Main Screen
 ![screenMain](screenshot/Screenshot1.jpg)
 
-## Main Screen
+## Instruction Model Box
 ![screenInstruction](screenshot/Screenshot2.jpg)
+
+## Main Screen - One card Flipped
+![screenMainCardFlipped](screenshot/Screenshot3.jpg)
