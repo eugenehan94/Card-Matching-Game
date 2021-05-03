@@ -8,4 +8,4 @@ player with the most points win.
 A feature is added if a player selects the same card, they would instantly lose their turn.
 
 
-![screenShotTop](Screenshot1.jpg)
+![screenShotTop](screenshot/Screenshot1.jpg)
