@@ -1,5 +1,7 @@
 # Card Matching Game
 
+## Link to game: https://eugenehan94.github.io/Card-Matching-Game/
+
 A responsive card flipping game for two players coded with HTML, CSS and vanilla JavaScript.
 
 Instructions: Two players would take turns a select two face-down cards. Players who match two cards are rewarded
